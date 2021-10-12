@@ -8,10 +8,10 @@ execution:
 - executor: jmeter
   scenario: DIGITALBANK_USER_PROFILE-Http
   concurrency: 20
-  ramp-up: 30s
+  ramp-up: 10s
   hold-for: 30s
   criteria:
-  - fail > 0%
+  - fail > 50%
 
 scenarios:
   DIGITALBANK_USER_PROFILE-Http:
